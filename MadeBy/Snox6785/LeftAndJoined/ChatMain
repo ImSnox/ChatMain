@@ -11,12 +11,16 @@ local A_2 ="All"
 while true do
 	wait(1)
 	local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
-	wait(0.1)
+	wait(0.3)
 	A_1Text ="Testing.."
 	wait(0.1)
 	local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
 	wait(0.1)
-	A_1Text ="Dummy Just Left [WORKING]"
+	A_1Text ="Dummy Just Joined                                                                         [Join:] Functional]"
+	wait(0.1)
+	local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
+	wait(0.1)
+	A_1Text ="Dummy Just Left                                                                         [Leave:] Functional]"
 	wait(0.1)
 	local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
 	wait(2)
