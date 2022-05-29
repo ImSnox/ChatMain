@@ -11,7 +11,15 @@ local A_2 ="All"
 while true do
 	wait(1)
 	local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
-	wait(0.5)
+	wait(0.1)
+	A_1Text ="Testing.."
+	wait(0.1)
+	local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
+	wait(0.1)
+	A_1Text ="Dummy Just Left [WORKING]"
+	wait(0.1)
+	local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
+	wait(2)
 	A_1Text:Destroy()
 	wait(0)
 	A_2:Destroy()
