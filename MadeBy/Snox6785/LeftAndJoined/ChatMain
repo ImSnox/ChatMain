@@ -8,6 +8,7 @@ local Message ="A_1"
 local A_1Text ="Notify Join And Leave!                                                                              [BY: Snox6785]"
 local A_2 ="All"
 
+--[[
 while true do
 	wait(1)
 	local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
@@ -28,3 +29,4 @@ while true do
 	wait(0)
 	A_2:Destroy()
 end
+]]--
